@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\SOURCE\erigon-silkworm\silkrpc\build.vs2022\CMakeFiles\80eccf54bfeb502842cb072ff65b0fac\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{640DA3E5-0EF9-3C98-BCB8-02B8FD13F1DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

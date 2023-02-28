@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\SOURCE\erigon-silkworm\silkrpc\build.vs2022\silkrpc\buildinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\SOURCE\erigon-silkworm\silkrpc\build.vs2022\silkrpc\buildinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SOURCE\erigon-silkworm\silkrpc\build.vs2022\CMakeFiles\e5251e976c7fb3b1cace5267fcd7489a\buildinfo.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\SOURCE\erigon-silkworm\silkrpc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{640DA3E5-0EF9-3C98-BCB8-02B8FD13F1DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3058F89D-DF4C-34B1-B56D-923E142BA13C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59791DB3-6A6E-3AEE-8456-1E53CBCB6F7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
