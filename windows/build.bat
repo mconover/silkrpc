@@ -185,9 +185,9 @@ if %INSTALL% EQU 1 (
 		echo [%DATE% %TIME%] devenv returned %ERRORLEVEL%
 		echo [%DATE% %TIME%] devenv returned %ERRORLEVEL% >> OUTPUT.txt
 
-		if exist "silkrpc\proto-bindings" (
+		if exist "silkworm\silkrpc\proto-bindings" (
 			mkdir %OUTDIR%\silkrpc
-			move silkrpc\proto-bindings %OUTDIR%\silkrpc\interfaces
+			robocopy /s silkworm\silkrpc\proto-bindings %OUTDIR%\interfaces
 		) else (
 			echo ERROR: missing %OUTDIR%\silkrpc
 			goto :EOF
@@ -195,20 +195,22 @@ if %INSTALL% EQU 1 (
 		
 		move cmd\Release\* "%OUTDIR%" 2>NUL
 		move silkrpc\Release\* "%OUTDIR%"
-		move silkworm\Release\* "%OUTDIR%"
-		move silkworm\core\Release\* "%OUTDIR%"
-		move silkworm\node\Release\* "%OUTDIR%"
-		move silkworm\sentry\Release\* "%OUTDIR%"
-		move silkworm\third_party\cbor-cpp\Release\* "%OUTDIR%"
-		move silkworm\third_party\evmone\evmc\lib\hex\Release\* "%OUTDIR%"
-		move silkworm\third_party\evmone\evmc\lib\instructions\Release\* "%OUTDIR%"
-		move silkworm\third_party\evmone\evmc\lib\loader\Release\* "%OUTDIR%"
-		move silkworm\third_party\evmone\evmc\lib\tooling\Release\* "%OUTDIR%"
+		move silkworm\silkrpc\Release\* "%OUTDIR%"
 
-		move silkworm\third_party\libmdbx\Release\mdbx.lib "%OUTDIR%"
-		move silkworm\third_party\libmdbx\Release\*.exe "%OUTDIR%"
-		move silkworm\third_party\silkpre\Release\* "%OUTDIR%"
-		move silkworm\third_party\silkpre\lib\Release\* "%OUTDIR%"
+		move third-party\silkworm\Release\* "%OUTDIR%"
+		move third-party\silkworm\core\Release\* "%OUTDIR%"
+		move third-party\silkworm\node\Release\* "%OUTDIR%"
+		move third-party\silkworm\sentry\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\cbor-cpp\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\CRoaring\src\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\evmone\evmc\lib\instructions\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\evmone\evmc\lib\loader\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\evmone\evmc\lib\tooling\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\libmdbx\Release\mdbx.lib "%OUTDIR%"
+		move third-party\silkworm\third_party\libmdbx\Release\*.exe "%OUTDIR%"
+		move third-party\silkworm\third_party\silkpre\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\silkpre\lib\Release\* "%OUTDIR%"
+		move third-party\silkworm\third_party\silkpre\third_party\libff\libff\Release\* "%OUTDIR%"
 
 		echo.
 		dir "%OUTDIR%"
